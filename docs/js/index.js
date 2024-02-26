@@ -1,6 +1,7 @@
 // Initialize the map variable
 var map;
 
+
 // Function to initialize the map
 function initMap() {
   // Create a new map and place it in the 'map' div

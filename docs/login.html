@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GO Chariot</title>
+  <meta content="Go Chariot" property="og:title" />
+  <meta content="A reimagined bus tracker for UNCG's Spartan Chariots" property="og:description" />
+  <meta content="https://gochariot.com" property="og:url" />
+  <meta content="#00008B" data-react-helmet="true" name="theme-color" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <script type="text/javascript" id="navbarScript" src="/js/navbar.js"></script>
+  <div class="login-container">
+    <div class="login-form col-md-4">
+      <div class="brand-wrapper">
+        <img src="path-to-your-logo.png" alt="GoChariot logo">
+      </div>
+      <h3 class="text-center">Login to Your Account</h3>
+        <div class="form-group">
+          <label for="inputEmail">Email address</label>
+          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">Password</label>
+          <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="rememberCheck">
+          <label class="form-check-label" for="rememberCheck">Remember me</label>
+        </div>
+        <button onclick="login()" class="btn btn-primary btn-login btn-block">Login</button>
+      
+      <p class="text-center mt-3">
+        Don't have an account? <a href="#">Sign up</a>
+      </p>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/login.js"></script>
+</html>

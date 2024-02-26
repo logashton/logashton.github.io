@@ -1,1 +1,9 @@
-/* */
+/* Additional styles for better appearance and responsiveness */
+.navbar {
+    margin-bottom: 20px;
+  }
+  
+  #map {
+    /* Adjust the height as necessary, or make it responsive */
+    height: 500px;
+  }
