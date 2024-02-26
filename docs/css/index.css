@@ -1,9 +1,128 @@
-/* Additional styles for better appearance and responsiveness */
-.navbar {
-    margin-bottom: 20px;
-  }
-  
-  #map {
-    /* Adjust the height as necessary, or make it responsive */
-    height: 500px;
-  }
+/***** OVERALL *****/
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  background-color: #e5e6e4;
+  font-size: 14px;
+}
+
+footer {
+  bottom: 0;
+  margin: 0;
+  padding: 2px;
+  background-color: #0f2044;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  margin-left: 50px;
+  font-size: 32px;
+}
+
+h2 {
+  color: #0f2044;
+  margin: 0;
+}
+
+hr.gray {
+  border: 1px solid rgba(211, 211, 211, 0.5);
+  margin-bottom: 10px;
+}
+
+hr.yellow {
+  border: 1px solid #ffb71b;
+  margin-bottom: 20px;
+}
+
+/***** NAVIGATION *****/
+
+/* --- nav bar --- */
+#logo {
+  width: 175px;
+}
+
+header {
+  background-color: #0f2044;
+  padding: 25px 50px 10px 50px;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+li {
+  float: left;
+  margin: 0px 0px 5px 45px;
+  padding-top: 7px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+li a:hover {
+  border-bottom: 2px solid #ffb71b;
+}
+
+.li-right {
+  float: right;
+  padding-right: 50px;
+}
+
+/* --- splash image --- */
+#splash {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #ffb71b;
+}
+
+/***** PAGE CONTENTS *****/
+
+#map {
+  height: 500px;
+}
+
+.contain-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* --- columns, reference: w3schools --- */
+.column {
+  float: left;
+}
+
+.left {
+  width: 75%;
+  margin: 25px 0px 25px 50px;
+}
+/*
+.right {
+  width: 25%;
+  background-color:blue;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
