@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Alerts | Go Chariot Admin</title>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="assets/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src='js/index.js' defer></script>
+</head>
+<body>
+    <header>
+        <a href="admin_dashboard.html"><img id="logo" src="assets/placeholder.png" alt="GoChariot Logo"></a>
+        <hr class="gray">
+        <h2>Send Alerts</h2>
+    </header>
+
+    <main class="container mt-4">
+        <h3>Create New Alert</h3>
+        <form>
+            <div class="form-group">
+                <label for="alertTitle">Alert Title</label>
+                <input type="text" class="form-control" id="alertTitle" placeholder="Enter alert title" required>
+            </div>
+            <div class="form-group">
+                <label for="alertMessage">Alert Message</label>
+                <textarea class="form-control" id="alertMessage" rows="3" placeholder="Enter alert message" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="alertTarget">Target Audience</label>
+                <select class="form-control" id="alertTarget">
+                    <option>All Users</option>
+                    <option>Students</option>
+                    <option>Faculty</option>
+                    <option>Staff</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Alert</button>
+        </form>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light text-center">
+        <div class="container">
+            <span class="text-muted">&copy; 2024 GoChariot - All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

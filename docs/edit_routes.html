@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Routes | Go Chariot Admin</title>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="assets/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src='js/index.js' defer></script>
+</head>
+<body>
+    <header>
+        <a href="admin_dashboard.html"><img id="logo" src="assets/placeholder.png" alt="GoChariot Logo"></a>
+        <hr class="gray">
+        <h2>Edit Routes</h2>
+    </header>
+
+    <main class="container mt-4">
+        <h3>Current Routes</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Route Name</th>
+                    <th scope="col">Start Point</th>
+                    <th scope="col">End Point</th>
+                    <th scope="col">Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example route (repeat for each route) -->
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Route A</td>
+                    <td>Location X</td>
+                    <td>Location Y</td>
+                    <td>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <!-- Add more rows for other routes -->
+            </tbody>
+        </table>
+
+        <!-- Placeholder for adding a new route -->
+        <h3>Add New Route</h3>
+        <form>
+            <div class="form-group">
+                <label for="routeName">Route Name</label>
+                <input type="text" class="form-control" id="routeName" placeholder="Enter route name">
+            </div>
+            <div class="form-group">
+                <label for="startPoint">Start Point</label>
+                <input type="text" class="form-control" id="startPoint" placeholder="Enter start point">
+            </div>
+            <div class="form-group">
+                <label for="endPoint">End Point</label>
+                <input type="text" class="form-control" id="endPoint" placeholder="Enter end point">
+            </div>
+            <button type="submit" class="btn btn-success">Add Route</button>
+        </form>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light text-center">
+        <div class="container">
+            <span class="text-muted">&copy; 2024 GoChariot - All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--====== METADATA =====-->
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Go Chariot | Home</title>
-  <meta content="Go Chariot" property="og:title" />
-  <meta content="A reimagined bus tracker for UNCG's Spartan Chariots" property="og:description" />
-  <meta content="https://gochariot.com" property="og:url" />
-  <meta content="#00008B" data-react-helmet="true" name="theme-color" />
-  <!--- links & styles -->
-  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/index.css">
-  <script src='js/index.js' defer></script>
-  <link rel="icon" href="assets\favicon.png">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Chariot | Driver Dashboard</title>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="assets/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src='js/index.js' defer></script>
 </head>
 
-<!--===== PAGE CONTENTS =====-->
-
 <body>
-  <!--- header -->
-  <header>
-    <a href="index.html"><img id="logo" src="assets/placeholder.png" alt="GoChariot Logo"></a>
-    <hr class="gray">
-    <h2><a href="index.html">GO CHARIOT</a></h2>
-  </header>
+    <header>
+        <a href="driver_index.html"><img id="logo" src="assets/placeholder.png" alt="GoChariot Logo"></a>
+        <hr class="gray">
+        <h2><a href="driver_index.html">DRIVER DASHBOARD</a></h2>
+    </header>
 
-  <!--- splash photo + navbar -->
-  <nav>
-    <div id="splash" style="background-image: url('assets/chariot-students-splash-overlay0.3.jpg');">
-      <ul>
-        <li><a href="driver_index.html">HOME</a></li>
-        <li><a href="routes.html">BUS ROUTES</a></li>
-        <li><a href="reviews.html">REVIEWS</a></li>
-        <div class="li-right">
-          <li><a href="driver_profile.html">PROFILE</a></li>
-          <li><a href="index.html">SIGN OUT</a></li>
+    <nav>
+        <div id="splash" style="background-image: url('assets/chariot-students-splash-overlay0.3.jpg');">
+            <ul>
+                <li><a href="driver_index.html">Home</a></li>
+                <li><a href="routes.html">My Routes</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="driver_profile.html">Profile</a></li>
+                <li><a href="index.html">Sign Out</a></li>
+            </ul>
+            <h1>SPARTAN CHARIOT</h1>
         </div>
-      </ul>
-      <h1><br><br><br>SPARTAN CHARIOT</h1>
-    </div>
-  </nav>
+    </nav>
 
-  <!--- main body -->
-  <main>
-    <section class="row">
-      <div class="column left">
-        <h2>LIVE MAP</h2>
-        <hr class="yellow">
-        <div id="map"></div>
-    </section>
-  </main>
+    <main>
+        <div class="container mt-5">
+            <section id="live-map">
+                <h2>Live Map</h2>
+                <hr class="yellow">
+                <!-- Embed or link to the live map here -->
+                <div id="map"></div>
+            </section>
 
-  <!--- footer -->
-  <footer>
-    <p>&copy GoChariot - Logan Phillips, Hasan Hashim, Madelyn Good</p>
-  </footer>
+            <section id="assigned-routes" class="mt-5">
+                <h2>My Assigned Routes</h2>
+                <p>View and manage your current and upcoming assigned routes.</p>
+                <!-- Dynamic content for assigned routes -->
+            </section>
 
+            <section id="ride-requests" class="mt-5">
+                <h2>Pending Ride Requests</h2>
+                <p>Review and respond to pending ride requests.</p>
+                <!-- Dynamic content for ride requests -->
+            </section>
+
+            <section id="route-updates" class="mt-5">
+                <h2>Submit Route Updates</h2>
+                <p>Notify the dispatch center of any changes or delays in your route.</p>
+                <!-- Form or interface for submitting updates -->
+            </section>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <p>&copy; GoChariot - Logan Phillips, Hasan Hashim, Madelyn Good</p>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
