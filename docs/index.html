@@ -14,11 +14,13 @@
   <!--- links & styles -->
   <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
   <script src='js/index.js' defer></script>
   <link rel="icon" href="assets\favicon.png">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </head>
 
 <!--===== PAGE CONTENTS =====-->
@@ -39,7 +41,11 @@
         <li><a href="routes.html">BUS ROUTES</a></li>
         <li><a href="reviews.html">REVIEWS</a></li>
         <div class="li-right">
-          <li><a href="login.html">LOGIN</a></li>
+          <li class=".logged-in d-none"><a href="profile.html">PROFILE</a></li>
+          <li class=".admin-logged-in d-none"><a href="admin.html">DASHBOARD</a></li>
+          <li class=".logged-in d-none"><a href="signout.html">SIGN OUT</a></li>
+          <li class=".logged-out"><a href="login.html">LOGIN</a></li>
+          <li class=".logged-out"><a href="signup.html">SIGN UP</a></li>
         </div>
       </ul>
       <h1><br><br><br>SPARTAN CHARIOT</h1>
