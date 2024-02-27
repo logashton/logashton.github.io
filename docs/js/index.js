@@ -94,7 +94,7 @@ function initMap() {
   // Move each bus every 250 ms
   setInterval(function() {
     busMarkers.forEach(moveBus);
-  }, 500);
+  }, 750);
 } 
 
 // Load the map script dynamically
