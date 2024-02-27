@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go Chariot | Sign Up</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="assets/favicon.png">
+  <style>
+    .signup-container {
+      padding: 50px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 50px auto;
+    }
+
+    .signup-form {
+      margin-top: 20px;
+    }
+
+    .signup-form input {
+      margin-bottom: 15px;
+    }
+
+    .signup-button {
+      background-color: #0f2044;
+      color: white;
+      border: none;
+    }
+
+    .signup-button:hover {
+      background-color: #ffb71b;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!--- header -->
+  <header>
+    <a href="index.html"><img id="logo" src="assets/placeholder.png" alt="GoChariot Logo"></a>
+    <hr class="gray">
+    <h2><a href="index.html">GO CHARIOT</a></h2>
+  </header>
+
+  <!--- splash photo + navbar -->
+  <nav>
+    <div id="splash" style="background-image: url('assets/uncg-spring-splash-overlay0.3.jpg');">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="routes.html">BUS ROUTES</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        <div class="li-right">
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="signup.html">SIGN UP</a></li>
+        </div>
+      </ul>
+      <h1><br><br><br>CREATE ACCOUNT</h1>
+    </div>
+  </nav>
+
+  <!--- main body -->
+  <main>
+    <section class="container">
+      <div class="signup-container">
+        <h2 class="text-center">Create Your Account</h2>
+        <hr class="yellow">
+        <div class="signup-form">
+          <input type="text" class="form-control" placeholder="Full Name" required>
+          <input type="email" class="form-control" placeholder="Email" required>
+          <input type="password" class="form-control" placeholder="Password" required>
+          <input type="password" class="form-control" placeholder="Confirm Password" required>
+          <button type="submit" onclick="signup()" class="btn btn-block signup-button">Sign Up</button>
+        </div>
+        <div class="text-center mt-3">
+          <p>Already have an account? <a href="login.html" style="color:#0f2044">Log in</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!--- footer -->
+    <footer>
+        <p>&copy GoChariot - Logan Phillips, Hasan Hashim, Madelyn Good</p>
+    </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

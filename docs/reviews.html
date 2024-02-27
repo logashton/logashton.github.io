@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!--====== METADATA =====-->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Go Chariot | Reviews</title>
-  <meta content="Go Chariot" property="og:title" />
-  <meta content="A reimagined bus tracker for UNCG's Spartan Chariots" property="og:description" />
-  <meta content="https://gochariot.com" property="og:url" />
-  <meta content="#00008B" data-react-helmet="true" name="theme-color" />
-  <!--- links & styles -->
+  <title>Go Chariot | Driver Reviews</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
   <link rel="stylesheet" href="css/index.css">
-  <link rel="icon" href="assets\favicon.png">
-</head>
+  <link rel="icon" href="assets/favicon.png">
+  <style>
+    .review-container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+    }
 
-<!--===== PAGE CONTENTS =====-->
+    .driver-name {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .review {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .review-details {
+      font-size: 16px;
+    }
+
+    .review-text {
+      margin-top: 5px;
+    }
+
+    .stars {
+      color: #ffb71b; /* Star rating color */
+    }
+  </style>
+</head>
 
 <body>
   <!--- header -->
   <header>
-    <a href="index.html"><img id="logo" src="assets/placeholder.png" alt="GoChariot Logo"></a>
     <hr class="gray">
     <h2><a href="index.html">GO CHARIOT</a></h2>
   </header>
 
-  <!--- splash photo + navbar -->
-  <nav>
-    <div id="splash" style="background-image: url('assets/PIC30376-splash-edit-overlay0.3.jpg');">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="routes.html">BUS ROUTES</a></li>
-        <li><a href="reviews.html">REVIEWS</a></li>
-        <div class="li-right">
-          <li><a href="login.html">LOGIN</a></li>
-        </div>
-      </ul>
-      <h1><br><br><br>CHARIOT RATINGS</h1>
-    </div>
-  </nav>
+    <!--- splash photo + navbar -->
+    <nav>
+      <div id="splash" style="background-image: url('assets/PIC30376-splash-edit-overlay0.3.jpg');">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="routes.html">BUS ROUTES</a></li>
+          <li><a href="reviews.html">REVIEWS</a></li>
+          <div class="li-right">
+            <li class=".logged-in d-none"><a href="profile.html">PROFILE</a></li>
+            <li class=".admin-logged-in d-none"><a href="admin.html">DASHBOARD</a></li>
+            <li class=".logged-in d-none"><a href="signout.html">SIGN OUT</a></li>
+            <li class=".logged-out"><a href="login.html">LOGIN</a></li>
+            <li class=".logged-out"><a href="signup.html">SIGN UP</a></li>
+          </div>
+        </ul>
+        <h1><br><br><br>DRIVER REVIEWS</h1>
+      </div>
+    </nav>
 
   <!--- main body -->
   <main>
-    <section class="row">
-      <div class="column left">
-        <h2>REVIEWS</h2>
-        <hr class="yellow">
-        <img class="contain-img" src="assets/placeholder.png">
+    <section class="container">
+      <div class="review-container">
+        <div class="driver-name">Driver John Doe - Average Rating: ★★★★☆</div>
+        <div class="review">
+          <div class="review-details">
+            <span class="stars">★★★★☆</span> - Anonymous
+          </div>
+          <div class="review-text">
+            John was very polite and drove safely. Great experience!
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-details">
+            <span class="stars">★★★★★</span> - Anonymous
+          </div>
+          <div class="review-text">
+            Excellent service, the ride was smooth and timely.
+          </div>
+        </div>
+      </div>
+
+      <div class="review-container">
+        <div class="driver-name">Driver Jane Smith - Average Rating: ★★★☆☆</div>
+        <div class="review">
+          <div class="review-details">
+            <span class="stars">★★★☆☆</span> - Anonymous
+          </div>
+          <div class="review-text">
+            Decent experience, but the ride was a bit bumpy.
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-details">
+            <span class="stars">★★★☆☆</span> - Anonymous
+          </div>
+          <div class="review-text">
+            Got us to our destination on time, but could be friendlier.
+          </div>
+        </div>
+      </div>
+      <!-- Add more driver reviews as needed -->
     </section>
   </main>
 
-  <!--- footer -->
   <footer>
-    <p>&copy GoChariot - Logan Phillips, Hasan Hashim, Madelyn Good</p>
+    <p>&copy; 2024 Go Chariot. All rights reserved.</p>
   </footer>
 
-</body>
-
-</html>
+  <script src="

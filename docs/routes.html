@@ -16,6 +16,36 @@
   <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
   <link rel="stylesheet" href="css/index.css">
   <link rel="icon" href="assets\favicon.png">
+  <style>
+    .bus-stops-container {
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+    .bus-stop {
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .bus-stop:last-child {
+      border-bottom: none;
+    }
+
+    .bus-stop-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .bus-stop-time {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
 </head>
 
 <!--===== PAGE CONTENTS =====-->
@@ -23,7 +53,6 @@
 <body>
   <!--- header -->
   <header>
-    <a href="index.html"><img id="logo" src="assets/placeholder.png" alt="GoChariot Logo"></a>
     <hr class="gray">
     <h2><a href="index.html">GO CHARIOT</a></h2>
   </header>
@@ -37,20 +66,30 @@
         <li><a href="reviews.html">REVIEWS</a></li>
         <div class="li-right">
           <li><a href="login.html">LOGIN</a></li>
+          <li><a href="signup.html">SIGN UP</a></li>
         </div>
       </ul>
       <h1><br><br><br>CHARIOT ROUTES</h1>
     </div>
   </nav>
-
-  <!--- main body -->
-  <main>
-    <section class="row">
-      <div class="column left">
-        <h2>BUS STOPS</h2>
-        <hr class="yellow">
-        <img class="contain-img" src="assets/placeholder.png">
-    </section>
+    <main>
+      <section class="container">
+        <div class="bus-stops-container">
+          <div class="bus-stop">
+            <div class="bus-stop-title">Main Street & 3rd</div>
+            <div class="bus-stop-time">Next bus: 08:15 AM, 09:00 AM, 09:45 AM</div>
+          </div>
+          <div class="bus-stop">
+            <div class="bus-stop-title">Pine Street & 5th</div>
+            <div class="bus-stop-time">Next bus: 08:20 AM, 09:05 AM, 09:50 AM</div>
+          </div>
+          <div class="bus-stop">
+            <div class="bus-stop-title">Elm Street & 7th</div>
+            <div class="bus-stop-time">Next bus: 08:25 AM, 09:10 AM, 09:55 AM</div>
+          </div>
+        </div>
+      </section>
+    </main>
   </main>
 
   <!--- footer -->

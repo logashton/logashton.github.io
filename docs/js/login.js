@@ -12,6 +12,10 @@ function login() {
     }
 }
 
+function signup() {
+    window.location.href = 'student_index.html';
+}
+
 
 
 function checkLocalStorage() {
