@@ -4,16 +4,16 @@ function login() {
     console.log(email);
     if (email.includes("admin")) {
         localStorage.setItem("admin", true);
-        window.location.href = 'admin_index.html';
+        window.location.href = 'admin_dashboard.html';
     } else if (email.includes("driver")) {
-        window.location.href = 'driver_index.html';
+        window.location.href = 'driver_dashboard.html';
     } else {
-        window.location.href = 'student_index.html';
+        window.location.href = 'student_dashboard.html';
     }
 }
 
 function signup() {
-    window.location.href = 'student_index.html';
+    window.location.href = 'student_dashboard.html';
 }
 
 

@@ -17,7 +17,7 @@ footer {
 }
 
 a {
-  color: white;
+  color:#0f2044;
   text-decoration: none;
 }
 
@@ -27,7 +27,7 @@ h1 {
   font-size: 32px;
 }
 
-h2 {
+h2, h3 {
   color: #0f2044;
   margin: 0;
 }
@@ -42,6 +42,21 @@ hr.yellow {
   margin-bottom: 20px;
 }
 
+button {
+  background-color: #ffb71b;
+  color:#0f2044;
+  padding: 8px 24px;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#0f2044;
+  color:#ffb71b;
+  border: none;
+}
+
 /***** NAVIGATION *****/
 
 /* --- nav bar --- */
@@ -52,6 +67,11 @@ hr.yellow {
 header {
   background-color: #0f2044;
   padding: 25px 50px 10px 50px;
+}
+
+a.nav {
+  color: white;
+  text-decoration: none;
 }
 
 ul {
@@ -95,6 +115,11 @@ li a:hover {
   border-bottom: 5px solid #ffb71b;
 }
 
+#splash-background {
+  background-position: center;
+  background-size: cover;
+}
+
 /***** PAGE CONTENTS *****/
 
 #map {
@@ -106,23 +131,87 @@ li a:hover {
   object-fit: cover;
 }
 
-/* --- columns, reference: w3schools --- */
+/* --- columns (to fit content not full width) --- */
 .column {
   float: left;
 }
 
 .left {
-  width: 75%;
+  width: 65%;
   margin: 25px 0px 25px 50px;
+  padding-right: 15px;
 }
-/*
+
 .right {
-  width: 25%;
-  background-color:blue;
-} */
+  width: 22%;
+  margin: 25px 25px 25px 5px;
+  padding: 25px;
+} 
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* --- input fields --- */
+.signup-container {
+  padding: 50px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.signup-form {
+  padding-right: 30px;
+}
+
+.profile-container {
+  padding: 50px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+input {
+  font-family: 'Poppins';
+  margin-bottom: 15px;
+  border: 1.5px solid lightgray;
+  padding: 5px 14px;
+  width: 100%;
+}
+
+input:focus {
+  border: 1.5px solid #0f2044;
+  outline: none;
+}
+
+textarea {
+  font-family: 'Poppins';
+  margin-bottom: 15px;
+  border: 1.5px solid lightgray;
+  padding: 5px 14px;
+  width: 100%;
+}
+
+.stars {
+  color:#ffb71b;
+}
+
+/* --- table (manage users) --- */
+table {
+  border-collapse: collapse;
+  width: 75%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px 8px 8px 8px;
+  margin: 0;
+}
+
+tr {
+  border-bottom: 1px solid gray;
 }

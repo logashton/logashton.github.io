@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--====== METADATA =====-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Chariot | Admin Dashboard</title>
-    <meta content="Go Chariot Admin Dashboard" property="og:title" />
-    <meta content="Manage Go Chariot's operations, routes, reviews, and user accounts from the admin dashboard." property="og:description" />
-    <meta content="https://gochariot.com/admin_dashboard.html" property="og:url" />
+    <title>Admin - Home</title>
+    <meta content="Go Chariot" property="og:title" />
+    <meta content="A reimagined bus tracker for UNCG's Spartan Chariots" property="og:description" />
+    <meta content="https://gochariot.com" property="og:url" />
     <meta content="#00008B" data-react-helmet="true" name="theme-color" />
+    <!--- links & styles -->
     <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!---<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="assets/favicon.png">
+    <script src='js/index.js' defer></script>
+    <link rel="icon" href="assets\favicon.png">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src='js/index.js' defer></script>
+    <script type="text/javascript" src="js/login.js"></script>
 </head>
+
+<!--===== PAGE CONTENTS =====-->
+
 <body>
+    <!--- header -->
     <header>
+        <a href="index.html"><img id="logo" src="assets/uncg_hrzntl-svg.png"></a>
         <hr class="gray">
-        <h2><a href="admin_dashboard.html">ADMIN DASHBOARD</a></h2>
+        <h2><a class="nav" href="index.html">GO CHARIOT</a></h2>
     </header>
 
+    <!--- splash photo + navbar -->
     <nav>
-        <div id="splash" style="background-image: url('assets/uncgbackground.jpeg'); background-size: cover; background-position: center;">
+        <div id="splash" style="background-image: url('assets/uncg-fall-splash-overlay0.3.jpg');">
             <ul>
-                <li><a href="manage_users.html">Manage Users</a></li>
-                <li><a href="edit_routes.html">Edit Routes</a></li>
-                <li><a href="view_reviews.html">View Reviews</a></li>
-                <li><a href="send_alerts.html">Send Alerts</a></li>
-                <li><a href="index.html">Sign Out</a></li>
+                <li><a href="admin_dashboard.html">HOME</a></li>
+                <li><a href="manage_users.html">MANAGE USERS</a></li>
+                <li><a href="edit_routes.html">EDIT ROUTES</a></li>
+                <li><a href="view_reviews.html">VIEW REVIEWS</a></li>
+                <li><a href="send_alerts.html">SEND ALERT</a></li>
+                <li class="li-right"><a href="index.html">SIGN OUT</a></li>
             </ul>
-            <h1 style="color: white;">ADMIN DASHBOARD</h1>
+            <h1><br><br><br>ADMIN HOME</h1>
         </div>
     </nav>
 
-    <main class="container mt-4">
-        <section class="mt-5">
-            <h2>Welcome, Admin</h2>
-            <p>This is your dashboard for managing Go Chariot's operations, including routes, reviews, and user accounts.</p>
+    <!--- main body -->
+    <main>
+        <section class="row">
+            <div class="column left">
+                <h2>WELCOME, ADMIN</h2>
+                <hr class="yellow">
+                <p>This is your dashboard for managing Go Chariot's operations, including routes, reviews, and user accounts.</p>
         </section>
     </main>
 
-    <footer class="footer mt-auto py-3 bg-light text-center">
-        <div class="container">
-            <span class="text-muted">&copy; 2024 GoChariot - All Rights Reserved.</span>
-        </div>
+    <!--- footer -->
+    <footer>
+        <p>&copy GoChariot - Logan Phillips, Hasan Hashim, Madelyn Good</p>
     </footer>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-</html>
 
+</html>
