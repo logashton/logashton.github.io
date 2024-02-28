@@ -39,7 +39,7 @@
       <ul>
         <li><a href="driver_dashboard.html">HOME</a></li>
         <li><a href="driver_route.html">MY ROUTE</a></li>
-        <li><a href="reviews.html">VIEW ALL REVIEWS</a></li>
+        <li><a href="driver_reviews.html">VIEW REVIEWS</a></li>
         <li class="li-right"><a href="index.html">SIGN OUT</a></li>
       </ul>
       <h1><br><br><br>MY ROUTE</h1>
@@ -85,7 +85,6 @@
               <option value="Route 1: Downtown Loop">Route 1: Downtown Loop</option>
               <option value="Route 2: University Express">Route 2: University Express</option>
             </select>
-            <label for="update-text">Update:</label>
             <textarea id="update-text" name="update" rows="4"
               placeholder="Describe the update or delay here"></textarea>
             <button type="submit">Submit Update</button>
@@ -101,9 +100,9 @@
       </div>
 
       <!--- LEFT column -->
-      <div class="column right" style="background-color: white;">
+      <div class="column right" style="background-color: white; border: 1.5px solid #ffb71b" >
         <!--- ride requests -->
-        <section id="ride-requests" class="mt-5">
+        <section id="ride-requests">
           <h2>PENDING RIDE REQUESTS</h2>
           <p>Review and respond to ride requests.</p>
           <div class="requests-list">

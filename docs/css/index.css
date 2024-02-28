@@ -136,17 +136,25 @@ li a:hover {
   float: left;
 }
 
-.left {
+.left /*column*/ {
   width: 65%;
   margin: 25px 0px 25px 50px;
   padding-right: 15px;
 }
 
-.right {
+.right /*column*/ {
   width: 22%;
   margin: 25px 25px 25px 5px;
   padding: 25px;
-} 
+}
+
+.right-block {
+  margin: 0px;
+  padding: 21px;
+  background-color: white;
+  border: 1.5px solid #ffb71b;
+  width: 100%;
+}
 
 .row:after {
   content: "";
@@ -180,7 +188,7 @@ input {
   margin-bottom: 15px;
   border: 1.5px solid lightgray;
   padding: 5px 14px;
-  width: 100%;
+  width: 90%;
 }
 
 input:focus {
@@ -193,7 +201,15 @@ textarea {
   margin-bottom: 15px;
   border: 1.5px solid lightgray;
   padding: 5px 14px;
-  width: 100%;
+  width: 90%;
+}
+
+select {
+  font-family: 'Poppins';
+  margin-bottom: 15px;
+  border: 1.5px solid lightgray;
+  padding: 3px 5px;
+  width: 50%;
 }
 
 .stars {
@@ -203,7 +219,7 @@ textarea {
 /* --- table (manage users) --- */
 table {
   border-collapse: collapse;
-  width: 75%;
+  width: 100%;
 }
 
 td, th {

@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Go Chariot | Home</title>
+  <title>Student - Home</title>
   <meta content="Go Chariot" property="og:title" />
   <meta content="A reimagined bus tracker for UNCG's Spartan Chariots" property="og:description" />
   <meta content="https://gochariot.com" property="og:url" />
@@ -14,7 +14,7 @@
   <!--- links & styles -->
   <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!---<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
   <link rel="stylesheet" href="css/index.css">
   <script src='js/index.js' defer></script>
   <link rel="icon" href="assets\favicon.png">
@@ -28,33 +28,68 @@
 <body>
   <!--- header -->
   <header>
+    <a href="index.html"><img id="logo" src="assets/uncg_hrzntl-svg.png"></a>
     <hr class="gray">
-    <h2><a href="index.html">GO CHARIOT</a></h2>
+    <h2><a class="nav" href="index.html">GO CHARIOT</a></h2>
   </header>
 
   <!--- splash photo + navbar -->
   <nav>
     <div id="splash" style="background-image: url('assets/chariot-students-splash-overlay0.3.jpg');">
       <ul>
-        <li><a href="student_index.html">HOME</a></li>
-        <li><a href="routes.html">BUS ROUTES</a></li>
-        <li><a href="reviews.html">REVIEWS</a></li>
-        <div class="li-right">
-          <li><a href="profile.html">PROFILE</a></li>
-          <li><a href="index.html">SIGN OUT</a></li>
-        </div>
+        <li><a href="student_dashboard.html">HOME</a></li>
+        <li><a href="routes.html">BUS TRACKER</a></li>
+        <li><a href="student_reviews.html">ADD REVIEW</a></li>
+        <li class="li-right"><a href="index.html">SIGN OUT</a></li>
       </ul>
-      <h1><br><br><br>SPARTAN CHARIOT</h1>
+      <h1><br><br><br>STUDENT HOME</h1>
     </div>
   </nav>
 
   <!--- main body -->
   <main>
     <section class="row">
+      <!--- RIGHT column -->
       <div class="column left">
+        <h2>WELCOME, STUDENT</h2>
+        <hr class="yellow">
+        <p>This is your dashboard as a UNCG Student for tracking Spartan Chariots, requesting rides, and leaving
+          reviews.</p>
+        <br>
+        <!--- map -->
         <h2>LIVE MAP</h2>
         <hr class="yellow">
+        <!-- Embed or link to the live map here -->
         <div id="map"></div>
+      </div>
+
+      <!--- LEFT column -->
+      <div class="column right" style="background-color: white; border: 1.5px solid #ffb71b">
+        <!--- ride requests -->
+        <h2>REQUEST A RIDE</h2>
+        <hr class="yellow">
+        <form>
+            <label for="alertTarget">Pick Up: &nbsp</label>
+            <select id="alertTarget">
+              <option>College Ave</option>
+              <option>Walker Circle</option>
+              <option>Spartan Village</option>
+              <option>Spring Garden</option>
+            </select>
+            <br>
+            <label for="alertTarget">Drop Off: </label>
+            <select id="alertTarget">
+              <option>Walker Circle</option>
+              <option>College Ave</option>
+              <option>Spartan Village</option>
+              <option>Spring Garden</option>
+            </select>
+          <br>
+          <button type="submit">Submit</button>
+          <br>
+        </form>
+
+
     </section>
   </main>
 
