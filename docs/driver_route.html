@@ -40,6 +40,7 @@
         <li><a href="driver_dashboard.html">HOME</a></li>
         <li><a href="driver_route.html">MY ROUTE</a></li>
         <li><a href="driver_reviews.html">VIEW REVIEWS</a></li>
+        <li><a href="driver_alerts.html">SEND ALERT</a></li>
         <li class="li-right"><a href="index.html">SIGN OUT</a></li>
       </ul>
       <h1><br><br><br>MY ROUTE</h1>
@@ -49,6 +50,7 @@
   <!--- main body -->
   <main>
     <div class="row">
+
       <!--- RIGHT column -->
       <div class="column left">
         <!--- assigned route -->
@@ -58,20 +60,27 @@
           <p>View and manage your current and upcoming assigned routes.</p><br>
           <div class="routes-list">
             <div class="route">
-              <h3>Route 1: Downtown Loop</h3>
+              <h3>Route 1: Campus Loop</h3>
               <p>Date: 2024-03-01</p>
               <p>Time: 08:00 - 16:00</p>
               <button onclick="viewRouteDetails('Route 1')">View Details</button>
             </div>
             <br><br>
             <div class="route">
-              <h3>Route 2: University Express</h3>
+              <h3>Route 2: Spartan Village Express</h3>
               <p>Date: 2024-03-02</p>
               <p>Time: 09:00 - 17:00</p>
               <button onclick="viewRouteDetails('Route 2')">View Details</button>
             </div>
           </div>
         </section>
+        <br>
+        <br>
+        <!--- map -->
+        <h2>LIVE MAP</h2>
+        <hr class="yellow">
+        <!-- Embed or link to the live map here -->
+        <div id="map"></div>
         <br>
         <br>
         <!-- update route -->
@@ -89,41 +98,61 @@
               placeholder="Describe the update or delay here"></textarea>
             <button type="submit">Submit Update</button>
           </form>
+          <br>
         </section>
-        <br>
-        <br>
-        <!--- map -->
-        <h2>LIVE MAP</h2>
-        <hr class="yellow">
-        <!-- Embed or link to the live map here -->
-        <div id="map"></div>
       </div>
 
       <!--- LEFT column -->
-      <div class="column right" style="background-color: white; border: 1.5px solid #ffb71b" >
+      <div class="column right">
         <!--- ride requests -->
-        <section id="ride-requests">
-          <h2>PENDING RIDE REQUESTS</h2>
-          <p>Review and respond to ride requests.</p>
-          <div class="requests-list">
-            <div class="request">
-              <p>Request from: John Doe</p>
-              <p>For Route: Downtown Loop</p>
-              <p>Number of Passengers: 3</p>
-              <button onclick="acceptRequest('John Doe')">Accept</button>
-              <button onclick="declineRequest('John Doe')">Decline</button>
-            </div>
-            <div class="request">
-              <p>Request from: Jane Smith</p>
-              <p>For Route: University Express</p>
-              <p>Number of Passengers: 1</p>
-              <button onclick="acceptRequest('Jane Smith')">Accept</button>
-              <button onclick="declineRequest('Jane Smith')">Decline</button>
-            </div>
-          </div>
-        </section>
+        <div class="right-block">
+          <h2>PENDING PICKUPS</h2>
+          <hr class="yellow">
+          <table>
+            <tr>
+              <th>Campus Loop</th>
+              <th>Passengers</th>
+            </tr>
+            <tr>
+              <td>Walker Circle</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>College Ave</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Spartan Village</td>
+              <td>7</td>
+            </tr>
+            <!--- Add more stops -->
+          </table>
+        </div>
+        <br>
+        <div class="right-block">
+          <h2>PENDING DROPOFFS</h2>
+          <hr class="yellow">
+          <table>
+            <tr>
+              <th>Campus Loop</th>
+              <th>Passengers</th>
+            </tr>
+            <tr>
+              <td>Walker Circle</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>College Ave</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Spartan Village</td>
+              <td>17</td>
+            </tr>
+            <!--- Add more stops -->
+          </table>
+        </div>
       </div>
-
 
       </section>
   </main>
